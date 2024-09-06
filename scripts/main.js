@@ -1,10 +1,10 @@
 (() => {
     const LYRA = {
-        name: "Project Pyxis",
+        name: "Pyxis",
         author: "Acherium",
         contact: "acherium@pm.me",
-        version: "2.0.1003",
-        date: "24-05-16",
+        version: "2.0.1004",
+        date: "24-09-06",
         watermark: true
     };
 
@@ -9265,8 +9265,10 @@
 
             const cx = v.width / 2;
             const cy = v.height / 2;
-            const x = (r.x * -1 + cx - r.width / 2) / op.rs + 1.4;
-            const y = (r.y * -1 + cy - r.height / 2) / op.rs + 0.9;
+            // const x = (r.x * -1 + cx - r.width / 2) / op.rs + 1.4;
+            // const y = (r.y * -1 + cy - r.height / 2) / op.rs + 0.9;
+            const x = (r.x * -1 + cx - r.width / 2) / op.rs + m.width * 0.0044;
+            const y = (r.y * -1 + cy - r.height / 2) / op.rs + m.height * 0.004;
             setPos(x, y);
         }, 50);
     };
